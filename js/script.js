@@ -1,1 +1,32 @@
-console.log("🚀 PROJECT NEXUS INITIALIZED");
+const spotlight = document.querySelector(".spotlight");
+
+document.addEventListener("mousemove",(e)=>{
+
+spotlight.style.left=e.clientX+"px";
+
+spotlight.style.top=e.clientY+"px";
+
+});
+const particleContainer = document.querySelector(".particles");
+
+for(let i=0;i<40;i++){
+
+const p=document.createElement("div");
+
+p.classList.add("particle");
+
+const size=Math.random()*4+2;
+
+p.style.width=size+"px";
+p.style.height=size+"px";
+
+p.style.left=Math.random()*100+"vw";
+p.style.top=Math.random()*100+"vh";
+
+p.style.animationDuration=(10+Math.random()*15)+"s";
+
+p.style.animationDelay=(Math.random()*10)+"s";
+
+particleContainer.appendChild(p);
+
+}
