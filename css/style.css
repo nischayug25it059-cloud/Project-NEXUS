@@ -1218,11 +1218,7 @@ left:100%;
 =========================================*/
 
 .contact{
-
-    min-height:100vh;
-
-    padding:120px 8%;
-
+    padding:140px 8% 80px;
 }
 
 .contact-container{
@@ -1450,5 +1446,17 @@ left:100%;
     font-size:15px;
 
     color:#6B7280;
+
+}
+
+.nav-links a.active{
+
+    color:#3B82F6;
+
+}
+
+.nav-links a.active::after{
+
+    width:100%;
 
 }
