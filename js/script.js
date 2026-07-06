@@ -62,3 +62,14 @@ window.addEventListener("scroll", () => {
     });
 
 });
+// =============================
+// NEXUS V2 - Smooth Scroll
+// =============================
+
+const lenis = new Lenis({
+  autoRaf: true,
+  duration: 1.1,
+  smoothWheel: true,
+  wheelMultiplier: 0.8,
+  touchMultiplier: 1.5,
+});
